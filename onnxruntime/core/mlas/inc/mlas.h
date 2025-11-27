@@ -2116,3 +2116,6 @@ void
 MLASCALL
 MlasGemmBatchPackUseKleidi(bool enable);
 #endif
+
+using _mlas_fp16_ = uint16_t;
+void MlasNeonErfKernelFp16(const _mlas_fp16_* Input, _mlas_fp16_* Output, size_t N);
